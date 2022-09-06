@@ -26,6 +26,7 @@ In the given dataset of 4282 images, 4 images were grayscale. Since we cannot us
 ## Training Results
 
 |     Model    |    Epochs    |  Learning Rate |  Batch Size  |   Loss Func  | Validation Error |
+| ------------ | ------------ | -------------- | ------------ | ------------ | ---------------- |
 |     basic    |     30       |     0.01       |     64       |     MSE      |      0.057       |
 |     basic    |     30       |     0.01       |     64       |     MAE      |      0.16        |
 |     basic    |     30       |     0.01       |     64       |    Huber     |      0.0273      |
@@ -83,9 +84,8 @@ The arguments for this script are as below:
 Example usage: `$ python inference.py --input dir/file_loc.jpg --image_type gray --model_pt basic_colorizer.model --model basic`
 
 
-## Bonus
-You are tasked to control the average color/mood of the image that you are colorizing. What are some ideas that come to your mind? (Bonus: Implement)
+## Future Improvements
 
-I think we can use HSV (Hue, Saturation and Value) to control the mood of the image. Unlike RGB format where changing the pixel values just change the color, HSV color space describes colors (hue or tint) in terms of their shade (saturation or amount of gray) and their brightness value.
+HSV (Hue, Saturation and Value) format can be used to control the mood of the image. Unlike RGB format where changing the pixel values just change the color, HSV color space describes colors (hue or tint) in terms of their shade (saturation or amount of gray) and their brightness value.
 
 
